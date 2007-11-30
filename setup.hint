@@ -1,0 +1,4 @@
+category: X11 PHP
+requires: cygwin libcairo2 php
+sdesc: "PHP cairo bindings"
+ldesc: "PHP cairo bindings"

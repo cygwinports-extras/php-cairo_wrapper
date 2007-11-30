@@ -1,0 +1,244 @@
+php-cairo_wrapper
+------------------------------------------
+PHP cairo bindings
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libcairo2-1.4.12-1
+  php-5.2.5-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.10-1.10-1
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  php-pear-5.2.5-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://pecl.php.net/package/cairo_wrapper
+
+Canonical download:
+  http://pecl.php.net/get/cairo_wrapper
+
+-------------------------------------------
+
+Build instructions:
+  unpack php-cairo_wrapper-0.2.3-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./php-cairo_wrapper-0.2.3-X.cygport all
+
+This will create:
+  /usr/src/php-cairo_wrapper-0.2.3-X-src.tar.bz2
+  /usr/src/php-cairo_wrapper-0.2.3-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/php5/conf.d/cairo_wrapper.ini
+  /usr/lib/php/20060613/cairo_wrapper.dll
+  /usr/share/doc/Cygwin/php-cairo_wrapper-0.2.3.README
+  /usr/share/doc/php-cairo_wrapper-0.2.3/CREDITS
+  /usr/share/pear/.registry/.channel.pecl.php.net/cairo_wrapper.reg
+  /usr/share/pear/doc/cairo_wrapper/CREDITS
+  /usr/share/pear/doc/cairo_wrapper/EXPERIMENTAL
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_append_path.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_arc.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_arc_negative.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_clip.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_clip_preserve.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_close_path.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_copy_page.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_copy_path.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_copy_path_flat.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_create.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_curve_to.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_destroy.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_device_to_user.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_device_to_user_distance.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_fill.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_fill_extents.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_fill_preserve.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_destroy.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_extents.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_face_get_type.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_face_status.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_get_scaled_font_options.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_options_copy.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_options_create.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_options_destroy.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_options_equal.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_options_get_antialias.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_options_get_hint_metrics.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_options_get_hint_style.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_options_get_subpixel_order.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_options_merge.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_options_set_antialias.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_options_set_hint_metrics.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_options_set_hint_style.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_options_set_subpixel_order.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_options_status.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_antialias.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_current_point.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_fill_rule.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_font_face.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_font_matrix.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_font_options.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_line_cap.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_line_join.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_line_width.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_matrix.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_miter_limit.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_operator.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_source.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_tolerance.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_identity_matrix.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_image_surface_create.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_image_surface_create_from_png.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_image_surface_get_format.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_image_surface_get_height.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_image_surface_get_width.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_in_fill.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_in_stroke.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_line_to.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_mask.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_mask_surface.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_matrix_create.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_matrix_create_identity.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_matrix_create_rotate.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_matrix_create_scale.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_matrix_create_translate.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_matrix_destroy.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_matrix_invert.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_matrix_multiply.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_matrix_rotate.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_matrix_scale.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_matrix_transform_distance.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_matrix_transform_point.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_matrix_translate.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_move_to.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_new_path.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_new_sub_path.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_paint.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_paint_with_alpha.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_path_destroy.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_path_to_array.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_add_color_stop_rgb.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_add_color_stop_rgba.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_create_for_surface.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_create_linear.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_create_radial.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_create_rgb.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_create_rgba.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_destroy.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_get_extend.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_get_filter.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_get_matrix.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_get_pattern_tpye.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_set_extend.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_set_filter.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_set_matrix.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_status.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pdf_surface_create.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pdf_surface_set_size.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pop_group.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pop_group_to_source.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_ps_surface_create.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_ps_surface_dsc_begin_page_setup.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_ps_surface_dsc_begin_setup.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_ps_surface_dsc_comment.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_ps_surface_set_size.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_push_group.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_push_group_with_content.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_rectangle.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_rel_curve_to.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_rel_line_to.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_rel_move_to.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_reset_clip.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_restore.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_rotate.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_save.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_scale.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_create.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_destroy.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_extents.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_get_font_ctm.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_get_font_face.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_get_font_matrix.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_get_font_options.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_get_type.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_status.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_text_extents.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_select_font_face.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_antialias.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_dash.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_fill_rule.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_font_face.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_font_matrix.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_font_options.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_font_size.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_line_cap.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_line_join.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_line_width.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_matrix.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_miter_limit.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_operator.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_scaled_font.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_source.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_source_rgb.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_source_rgba.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_source_surface.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_set_tolerance.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_show_page.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_show_text.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_status.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_status_to_string.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_stroke.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_stroke_extents.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_stroke_preserve.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_create_similar.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_destroy.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_flush.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_get_content.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_get_device_offset.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_get_font_options.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_get_type.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_make_dirty_rectangle.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_mark_dirty.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_set_device_offset.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_set_fallback_resolution.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_show_png.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_status.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_write_to_png.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_svg_get_versions.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_svg_surface_create.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_svg_surface_restrict_to_version.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_svg_version_to_string.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_text_extents.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_text_path.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_transform.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_translate.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_user_to_device.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_user_to_device_distance.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_version.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_version_string.phpt
+
+------------------
+
+Port Notes:
+
+----- version 0.2.3-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
