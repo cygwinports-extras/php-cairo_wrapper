@@ -3,18 +3,17 @@ php-cairo_wrapper
 PHP cairo bindings
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  libcairo2-1.4.12-1
+  cygwin-1.5.25-7
+  libcairo2-1.4.14-1
   php-5.2.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.10-1.10-1
   binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  cygport-0.3.8-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   libtool1.5-1.5.23a-2
   make-3.81-1
@@ -30,15 +29,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack php-cairo_wrapper-0.2.3-X-src.tar.bz2
+  unpack php-cairo_wrapper-0.2.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./php-cairo_wrapper-0.2.3-X.cygport all
+  cygport ./php-cairo_wrapper-0.2.4-X.cygport all
 
 This will create:
-  /usr/src/php-cairo_wrapper-0.2.3-X-src.tar.bz2
-  /usr/src/php-cairo_wrapper-0.2.3-X.tar.bz2
+  /usr/src/php-cairo_wrapper-0.2.4-X-src.tar.bz2
+  /usr/src/php-cairo_wrapper-0.2.4-X.tar.bz2
 
 -------------------------------------------
 
@@ -46,8 +45,7 @@ Files included in the binary package:
 
   /etc/php5/conf.d/cairo_wrapper.ini
   /usr/lib/php/20060613/cairo_wrapper.dll
-  /usr/share/doc/Cygwin/php-cairo_wrapper-0.2.3.README
-  /usr/share/doc/php-cairo_wrapper-0.2.3/CREDITS
+  /usr/share/doc/php-cairo_wrapper-0.2.4/CREDITS
   /usr/share/pear/.registry/.channel.pecl.php.net/cairo_wrapper.reg
   /usr/share/pear/doc/cairo_wrapper/CREDITS
   /usr/share/pear/doc/cairo_wrapper/EXPERIMENTAL
@@ -55,6 +53,7 @@ Files included in the binary package:
   /usr/share/pear/test/cairo_wrapper/tests/cairo_arc.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_arc_negative.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_clip.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_clip_extents.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_clip_preserve.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_close_path.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_copy_page.phpt
@@ -70,6 +69,7 @@ Files included in the binary package:
   /usr/share/pear/test/cairo_wrapper/tests/cairo_fill_preserve.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_font_destroy.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_font_extents.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_font_face_get_reference_count.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_font_face_get_type.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_font_face_status.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_font_get_scaled_font_options.phpt
@@ -89,6 +89,8 @@ Files included in the binary package:
   /usr/share/pear/test/cairo_wrapper/tests/cairo_font_options_status.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_get_antialias.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_get_current_point.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_dash.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_dash_count.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_get_fill_rule.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_get_font_face.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_get_font_matrix.phpt
@@ -99,6 +101,8 @@ Files included in the binary package:
   /usr/share/pear/test/cairo_wrapper/tests/cairo_get_matrix.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_get_miter_limit.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_get_operator.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_reference_count.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_get_scaled_font.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_get_source.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_get_tolerance.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_identity_matrix.phpt
@@ -144,6 +148,8 @@ Files included in the binary package:
   /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_get_filter.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_get_matrix.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_get_pattern_tpye.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_get_reference_count.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_get_rgba.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_set_extend.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_set_filter.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_pattern_set_matrix.phpt
@@ -175,6 +181,7 @@ Files included in the binary package:
   /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_get_font_face.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_get_font_matrix.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_get_font_options.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_get_reference_count.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_get_type.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_status.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_scaled_font_text_extents.phpt
@@ -211,6 +218,7 @@ Files included in the binary package:
   /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_get_content.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_get_device_offset.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_get_font_options.phpt
+  /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_get_reference_count.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_get_type.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_make_dirty_rectangle.phpt
   /usr/share/pear/test/cairo_wrapper/tests/cairo_surface_mark_dirty.phpt
@@ -235,6 +243,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.2.4-1 -----
+Version bump.
 
 ----- version 0.2.3-1 -----
 Initial release for Cygwin.
